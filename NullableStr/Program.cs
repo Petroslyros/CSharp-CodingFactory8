@@ -10,11 +10,24 @@
             s1 = Console.ReadLine()!;
             s2 = Console.ReadLine();
 
-            if(s1.Equals("Coding") && s2!.Equals("Coding"))
+            if (s1.Equals("Coding") && (s2 != null) && s2.Equals("Coding"))
             {
                 Console.WriteLine("Bingo");
             }
 
         }
+
+    public static string GetUpperString(string? s)
+        {
+
+            return s?.ToUpper();    //null conditional operator
+        }
+
+        public static string GetUpperString2(string? s)
+        {
+
+            return s?.ToUpper() ?? "NULL";    //Coalescing operator
+        }
     }
+
 }
