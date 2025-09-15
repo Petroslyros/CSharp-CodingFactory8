@@ -53,6 +53,7 @@ namespace RegExApp
 
         public static void testGroups(string? s)
         {
+            if(s == null) return;
             string? pattern = @"(\d{4})-(\d{2})-(\d{2})";   //match date
             MatchCollection matches = Regex.Matches(s!, pattern);
 
