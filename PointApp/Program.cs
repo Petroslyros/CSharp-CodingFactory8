@@ -12,5 +12,17 @@ namespace PointApp
             Point3D p3 = new() { X = 10, Y = 20, Z = 30 };
             Point p4 = new Point3D() { X = 10,Y = 20, Z = 30 }; //Type polymorphism
         }
+
+        //Πολυμορφικη γιατι η παραμετρος ειναι πολυμορφικη
+        //@runtime οτιδηποτε IS-A point
+        public static void DoMove5(Point p)
+        {
+            p.Move5();
+        }
+
+        public static void DoPring(Point p)
+        {
+            Console.WriteLine(p);
+        }
     }
 }
