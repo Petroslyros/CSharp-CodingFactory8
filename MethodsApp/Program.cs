@@ -6,16 +6,9 @@ namespace MethodsApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             DateTime dateTime = GetDateTime(day: 15, month: 8);
             DateTime dateTime2 = GetDateTime(2026, 12, 25, 10, 30, 0);
             Console.WriteLine($"{dateTime:F}");
-        }
-
-        public static int Add(int a, int b)
-        {
-            return a + b;
         }
 
         public static int Factorial(int n)
@@ -62,15 +55,6 @@ namespace MethodsApp
             Console.WriteLine($"{inputNum}");
         }
 
-        public static bool isEven(int number)
-        {
-            return number % 2 == 0; 
-        }
-
-        public static bool isOdd(int number)
-        {
-            return !isEven(number);
-        }
 
         public static int GetMax(int a, int b) => a > b ? a : b;
         //return Math.Max(a,b)

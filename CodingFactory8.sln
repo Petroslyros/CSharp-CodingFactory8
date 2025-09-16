@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regex", "Regex\Regex.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp", "StudentApp\StudentApp.csproj", "{66FCE58F-6FD6-4916-9F66-D09C13931AFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountApp", "AccountApp\AccountApp.csproj", "{8501A00B-A71C-4987-9B0C-F98925643553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointApp", "PointApp\PointApp.csproj", "{9DBB19C0-EC62-48F2-914C-6A294B66FC0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{66FCE58F-6FD6-4916-9F66-D09C13931AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66FCE58F-6FD6-4916-9F66-D09C13931AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66FCE58F-6FD6-4916-9F66-D09C13931AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8501A00B-A71C-4987-9B0C-F98925643553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8501A00B-A71C-4987-9B0C-F98925643553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8501A00B-A71C-4987-9B0C-F98925643553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8501A00B-A71C-4987-9B0C-F98925643553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBB19C0-EC62-48F2-914C-6A294B66FC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBB19C0-EC62-48F2-914C-6A294B66FC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBB19C0-EC62-48F2-914C-6A294B66FC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBB19C0-EC62-48F2-914C-6A294B66FC0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
