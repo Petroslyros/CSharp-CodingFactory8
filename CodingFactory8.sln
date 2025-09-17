@@ -79,6 +79,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShallowDeepCopyApp", "Shall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClassesApp", "AbstractClassesApp\AbstractClassesApp.csproj", "{5A84EB33-CAC5-4056-B6E3-58C1D75F9CF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesApp", "InterfacesApp\InterfacesApp.csproj", "{C9B9D280-CF58-4D65-9222-A9B5677EE776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionApp", "DependencyInjectionApp\DependencyInjectionApp.csproj", "{6ECCCC1F-C339-4C48-8548-25A1F236FB75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +241,14 @@ Global
 		{5A84EB33-CAC5-4056-B6E3-58C1D75F9CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A84EB33-CAC5-4056-B6E3-58C1D75F9CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A84EB33-CAC5-4056-B6E3-58C1D75F9CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B9D280-CF58-4D65-9222-A9B5677EE776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B9D280-CF58-4D65-9222-A9B5677EE776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B9D280-CF58-4D65-9222-A9B5677EE776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B9D280-CF58-4D65-9222-A9B5677EE776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECCCC1F-C339-4C48-8548-25A1F236FB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECCCC1F-C339-4C48-8548-25A1F236FB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECCCC1F-C339-4C48-8548-25A1F236FB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECCCC1F-C339-4C48-8548-25A1F236FB75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
