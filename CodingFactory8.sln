@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQApp1", "LINQApp1\LINQAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsApp0", "CollectionsApp0\CollectionsApp0.csproj", "{07EFA65A-803A-4BCA-AE3C-5566646DE1B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0Practise", "0Practise\0Practise.csproj", "{23519668-012B-4F45-B07C-2D05DD79E638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -601,6 +603,18 @@ Global
 		{07EFA65A-803A-4BCA-AE3C-5566646DE1B9}.Release|x64.Build.0 = Release|Any CPU
 		{07EFA65A-803A-4BCA-AE3C-5566646DE1B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{07EFA65A-803A-4BCA-AE3C-5566646DE1B9}.Release|x86.Build.0 = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|x64.Build.0 = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Debug|x86.Build.0 = Debug|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|x64.ActiveCfg = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|x64.Build.0 = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|x86.ActiveCfg = Release|Any CPU
+		{23519668-012B-4F45-B07C-2D05DD79E638}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

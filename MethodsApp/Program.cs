@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 namespace MethodsApp
 {
@@ -14,7 +15,7 @@ namespace MethodsApp
         public static int Factorial(int n)
         {
             if (n <= 1) return 1;
-            return n * Factorial (n - 1);
+            return n * Factorial(n - 1);
         }
 
         public static void Swap(ref int x, ref int y)
@@ -27,7 +28,7 @@ namespace MethodsApp
         public static int Add(params int[] numbers)
         {
             int sum = 0;
-            foreach(var number in numbers)
+            foreach (var number in numbers)
             {
                 sum += number;
             }
@@ -35,9 +36,9 @@ namespace MethodsApp
         }
 
         public static DateTime GetDateTime(int year = 2025, int month = 1, int day = 1,
-                                            int hour = 0, int minute = 0, int second = 0,int milli = 0)
+                                            int hour = 0, int minute = 0, int second = 0, int milli = 0)
         {
-            return new DateTime(year, month, day, hour, minute, second, milli);    
+            return new DateTime(year, month, day, hour, minute, second, milli);
         }
 
         public static void PrintMessage(string message = "Hello, World!")
@@ -67,7 +68,7 @@ namespace MethodsApp
         public static string StrRepeat(string s, int count)
         {
             StringBuilder sb = new StringBuilder();
-            for(int i = 0; i <= count; i++)
+            for (int i = 0; i <= count; i++)
             {
                 sb.Append(s[i]);
             }
@@ -76,13 +77,14 @@ namespace MethodsApp
 
         public static bool isPalindromeIgnoreCase(string s)
         {
-               for (int i = 0, j = s.Length; i< j; i++, j--)
+            for (int i = 0, j = s.Length; i < j; i++, j--)
             {
-                if (char.ToUpper(s[i]) != char.ToUpper(s[j])) {
+                if (char.ToUpper(s[i]) != char.ToUpper(s[j]))
+                {
                     return false;
                 }
             }
-               return true; 
+            return true;
         }
 
         public static string RandomPinFourDigits()
@@ -96,11 +98,11 @@ namespace MethodsApp
         {
             int n = arr.Length;
             int temp = 0;
-            for(int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = arr.Length -1; j > i; j--)
+                for (int j = arr.Length - 1; j > i; j--)
                 {
-                    if (arr[j] < arr[j-1])
+                    if (arr[j] < arr[j - 1])
                     {
                         (arr[j - 1], arr[j]) = (arr[j], arr[j - 1]);
                     }
@@ -110,13 +112,13 @@ namespace MethodsApp
 
         public static bool IsPrime(int number)
         {
-            if(number<=10 ) return false;
+            if (number <= 10) return false;
             if (number == 2) return true;
             if (number % 2 == 0) return false;
-            
-            for(int i = 3; i <= Math.Sqrt(number); i+=2 )
+
+            for (int i = 3; i <= Math.Sqrt(number); i += 2)
             {
-                if(number % i == 0) return false;
+                if (number % i == 0) return false;
             }
             return true;
         }
@@ -126,10 +128,68 @@ namespace MethodsApp
             int a = 0, b = 1, c = 0;
 
             if (n == 0) return 0;
-            if( n == 1) return 1;
+            if (n == 1) return 1;
 
             return Fibonacci(n - 1) + Fibonacci(n - 2);
-                
+
         }
+
+        public static void PalindromeCheck()
+        {
+            int[] ints = { 1, 2, 3, 2, 1 };
+            bool isPalindrome = true;
+
+            for (int i = 0, j = ints.Length - 1; i < j; i++, j--)
+            {
+                if (ints[i] != ints[j])
+                {
+                    isPalindrome = false;
+                    break;
+                }
+            }
+
+            Console.WriteLine($"Is Palindrome: {isPalindrome}");
+        }
+
+        public static void StringHelpers()
+        {
+            string str1 = "Hello, World";
+            string str2 = "Hello, C# !   ";
+
+            Console.WriteLine(str1.ToUpper());   // "HELLO, WORLD"
+            Console.WriteLine(str1.ToLower());   // "hello, world"
+            Console.WriteLine(str2.Trim());      // "Hello, C# !"
+
+            bool result = str1.ToUpper() == str2.ToUpper();
+            Console.WriteLine($"Equal ignoring case: {result}");
+
+            Console.WriteLine($"IndexOf 'World': {str1.IndexOf("World")}");
+            Console.WriteLine($"LastIndexOf 'o': {str1.LastIndexOf("o")}");
+            Console.WriteLine($"Substring: {str1.Substring(7, 5)}");
+
+            Console.WriteLine(str1.Replace("World", "C#"));
+            Console.WriteLine(Regex.Replace(str1, @"\s+", "_"));
+
+            string[] words = str1.Split(',');
+            Console.WriteLine(string.Join(" - ", words));
+
+            bool contains = str1.Contains("World");
+            bool startsWith = str1.StartsWith("Hello");
+            Console.WriteLine($"Contains 'World': {contains}, StartsWith 'Hello': {startsWith}");
+
+            Console.WriteLine($"Length: {str1.Length}");
+            Console.WriteLine(string.Format("{0} and {1}", str1, 10));
+
+            Console.WriteLine(str1.PadLeft(20).PadRight(25, '*'));
+
+            string joined = string.Concat(str1, " ", str2);
+            Console.WriteLine(joined);
+
+            string reversed = new string(str1.Reverse().ToArray());
+            Console.WriteLine($"Reversed: {reversed}");
+        }
+
+
+
     }
 }
